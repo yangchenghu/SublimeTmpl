@@ -104,11 +104,15 @@
         "syntax": "Packages/YAML/YAML.tmLanguage",
         "extension": "yaml"
     },
+    "react": {
+        "syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+        "extension": "react"
+    },
     "disable_keymap_actions": false, // "all"; "html,css"
     "date_format" : "%Y-%m-%d %H:%M:%S",
     "attr": {
-        "author": "Your Name",
-        "email": "you@example.org",
-        "link": "http://example.org"
+        "author": "Sam Yang",
+        "email": "yangch.work@gmail.com",
+        "link": "http://chenghu.me"
     }
 }

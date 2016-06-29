@@ -23,4 +23,8 @@
         "caption": "Tmpl: Create ruby", "command": "sublime_tmpl",
         "args": {"type": "ruby"}
     }
+    {
+        "caption": "Tmpl: Create react", "command": "sublime_tmpl",
+        "args": {"type": "react"}
+    }
 ]

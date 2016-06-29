@@ -1,0 +1,190 @@
+/**
+ * ${1}.js
+ * @authors ${author} (${email})
+ * @date    ${date}
+ */
+
+/**
+ * 这一块没有什么实质功能，主要是用来给编辑器做代码提示，不需要的可以删掉
+ *
+ * backgroundColor 
+ * color (black, white, green, blue, red, yellow, )
+ *
+ * width
+ * height 
+ *
+ * flex
+ * flexDirection  	// 元素方向 enum('row', 'column')
+ * alignItems  		// 水平方向 enum('flex-start', 'flex-end', 'center', 'stretch')
+ * justifyContent   // 垂直方向 enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+ * 
+ * textAlign  // 文字对齐 enum("auto", 'left', 'right', 'center')
+ * fontSize   // 文字字号 
+ * fontWeight // 文字宽度 enum("normal", 'bold', '100', '200', '300', '400', '500', '600', '700', '800', '900')
+ *
+ * 
+ * 
+ * 
+ * top
+ * left
+ * right
+ * bottom
+ * 
+ * 
+ * 
+ * margin
+ * marginBottom
+ * marginHorizontal
+ * marginLeft
+ * marginRight
+ * marginTop
+ * marginVertical
+ * 
+ * padding
+ * paddingBottom
+ * paddingHorizontal
+ * paddingLeft
+ * paddingRight
+ * paddingTop
+ * paddingVertical
+ *
+ * 
+ * borderColor
+ *
+ * borderWidth
+ *
+ * borderRadius  //圆角
+ * 
+ * borderLeftWidth
+ * borderRightWidth
+ * borderTopWidth
+ * borderBottomWidth
+ *
+ * false
+ * true
+ *
+ *
+ * props
+ * state
+ * setState
+ *
+ * getInitialState    // 初始化
+ * componentWillMount //
+ * componentDidMount  // 加载完成
+ * componentWillReceiveProps  //属性被修改
+ * shouldComponentUpdate
+ * componentWillUpdate
+ * componentDidUpdate
+ * componentWillUnmount
+ *
+ * http://facebook.github.io/react/docs/component-specs.html
+ *
+ * console
+ * log
+ * alert
+ *
+ *
+ * navigator
+ * 
+ * onPress
+ * onPressOut
+ *
+ *
+ * compontent
+ * TouchableOpacity
+ * TouchableHighlight
+ *
+ *
+ * JSON.stringify(obj); return string
+ * JSON.parse(string);  return obj 
+ *
+ *
+ * setTimeout    //设置超时时间
+ *
+ *
+ *
+ * undefined
+*/
+
+/** //不同的平台区分
+ * var Platform = require('Platform');
+ * 
+ * if (Platform.OS === 'ios') {
+ * 
+ * } else if (Platform.OS === 'android') {
+ * 	
+ * }
+ */
+
+/** //获取屏幕宽度
+ * import Dimensions from 'Dimensions';
+ * var screenWidth = Dimensions.get('window').width;
+ * var screenHeight = Dimensions.get('window').height;
+ *
+ */
+
+ /*＊ //键盘消失
+  *  var dismissKeyboard = require('dismissKeyboard');
+  *
+  * //需要的地方调用一下
+  *  dismissKeyboard();
+  */
+
+/*
+ * var EventEmitter = require('EventEmitter');
+ * var eventEmitter = new EventEmitter();
+ *
+ * eventEmitter.addListener('didUserLogined', (response) => {
+ *     console.log('event response is' + response)
+ *   })
+ * 
+ *  eventEmitter.emit('didUserLogined', 'userinfo')
+ *
+ */
+
+/*
+ * NativeAppEventEmitter
+ * DeviceEventEmitter
+ * addListener('didUserLogined', function(){})
+ *
+ */
+
+'use strict';
+
+import React, { Component } from 'react';
+
+import {
+	Text,
+	View,
+	Image,
+	StyleSheet,
+	NativeModules,
+	TouchableHighlight,
+	NativeAppEventEmitter,
+} from 'react-native';
+
+
+var styles = StyleSheet.create({
+
+
+});
+
+var ${1} = React.createClass({
+	
+	getInitialState : function() {
+
+		return({})
+	},
+
+	componentDidMount : function() {
+	},
+
+	render: function() {
+
+		return (
+			
+			)
+	},
+});
+
+module.exports = ${1};

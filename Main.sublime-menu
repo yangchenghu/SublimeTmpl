@@ -49,6 +49,13 @@
                             "type": "ruby"
                         }
                     },
+                     {
+                        "caption": "React",
+                        "command": "sublime_tmpl",
+                        "args": {
+                            "type": "react"
+                        }
+                    },
                     {"caption": "-"},
                     {
                         "command": "open_file",

@@ -98,6 +98,7 @@ class SublimeTmplCommand(sublime_plugin.TextCommand):
                 isIOError = True
 
         # print(self.tmpl_path)
+        # sublime.message_dialog(code)
         if isIOError:
             sublime.message_dialog('[Warning] No such file: ' + self.tmpl_path
                                    + ' or ' + self.user_tmpl_path)
@@ -117,6 +118,7 @@ class SublimeTmplCommand(sublime_plugin.TextCommand):
         attr = settings.get('attr', {})
         for key in attr:
             code = code.replace('${%s}' % key, attr.get(key, ''))
+        
         return code
 
     def creat_tab(self, view):
@@ -128,6 +130,7 @@ class SublimeTmplCommand(sublime_plugin.TextCommand):
         tab = self.tab
         # tab.set_name('untitled.' + self.type)
         # insert codes
+        # sublime.message_dialog(code)
         tab.run_command('insert_snippet', {'contents': code})
 
     def set_syntax(self, opts):
@@ -187,7 +190,7 @@ def plugin_loaded():  # for ST3 >= 3016
             tmpl_dir + 'css.tmpl', tmpl_dir + 'html.tmpl',
             tmpl_dir + 'js.tmpl', tmpl_dir + 'php.tmpl',
             tmpl_dir + 'python.tmpl', tmpl_dir + 'ruby.tmpl',
-            tmpl_dir + 'xml.tmpl'
+            tmpl_dir + 'xml.tmpl', tmpl_dir + 'react.tmpl'
         ]
         try:
             extract_zip_resource(BASE_PATH, file_list, TARGET_PATH)
